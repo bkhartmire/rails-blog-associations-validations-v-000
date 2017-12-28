@@ -18,8 +18,9 @@
     <%= f.text_field :content%><br>
   </div>
 
-  <div>
+  <div class="checkbox">
     <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>
